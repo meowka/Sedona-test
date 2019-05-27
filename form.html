@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>form</title>
+</head>
+<body>
+<head>
+	<meta charset="UTF-8">
+	<title>Sedona Главная страница</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="less/style.css">
+	<link rel="stylesheet" href="less/photo.css">
+	<link rel="stylesheet" href="less/form.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="page-header">
+
+		<!-- Меню -->
+		<nav class="main-nav">
+			<!-- Кнопка открыть меню -->
+			<div class="main-knopka">
+				<button class="main-nav__toggle btn-closed" type="button">Закрыть меню</button>
+				<button class="main-nav__toggle btn-open" type="button" class="btn-open">Окрыть меню</button>
+			</div>
+			<div class="main-nav-wrapper">
+			<ul class="main-nav__list site-list">
+				<li class="site-list-item"><a href="index.html" class="nav-link">Главная</a></li>
+				<li class="site-list-item"><a href="photo.html"class="nav-link">Фото и Видео</a></li>
+				<li class="site-list-item"><a href="form.html"class="nav-link">Форма и Отзывы</a></li>
+				<li class="site-list-item"><a href="#"class="nav-link">HTML ACADEMY</a></li>
+			</ul>
+			</div>
+		</nav>
+<div class="page-header-logo page-header-logo-dec">
+	<picture>
+		<source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg.png">
+		<source media="(min-width: 768px)" srcset="img/logotype-tablet.svg.png">
+		<a href="index.html" class="main-logo main-logo-dec"><img src="img/logotyle-mobile.svg.png" alt="city of sedona"></a>
+	</picture>
+</div>
+</header>
+		<main class="page-main">
+		<section class="page-intro page-intro-dec">
+			<div class="page-intro-text-dec">
+				<picture>
+				<source media="(min-width: 1200px)" srcset="img/photo/SEDONA-tablet.png">
+				<source media="(min-width: 768px)" srcset="img/photo/SEDONA-tablet.png">
+				<img src="img/photo/SEDONA-mobile.png" alt="" class=""></div>
+			</picture>
+		</section>
+		<div class="page-intro-content">
+			<h2>Оставь свой отзыв</h2> 
+				<p>Помогите нашим отелям стать лучше! Оставь отзыв о них, а так же о посещаемых вами достопримечательностях</p>
+			</div>
+			<main class="main-content">
+				<form action="#" class="form-list" method="post">
+					<fieldset class="form-item">
+						<legend class="form-tittle">
+							Представтесь
+						</legend>
+						<ul class="form-profile">
+							<li class="form-profile--item">
+								<label for="name" class="form-profile--name">Имя*:</label>
+								<input type="text" id="name" name="name" placeholder="Петр">
+							</li>
+							<li class="form-profile--item">
+								<label for="surname" class="form-profile--name">Фамилия*:</label>
+								<input type="text" id="surname" name="surname" placeholder="Иванов">
+							</li>
+							<li class="form-profile--item"><label for="patronymic" class="form-profile--name">Отчество:</label>
+								<input type="text" id="patronymic" name="patronymic" placeholder="Александрович"></li>
+						</ul>
+					</fieldset>
+					<fieldset class="form-item">
+						<legend class="form-tittle">
+							Контактная информация
+						</legend>
+						<ul>
+							<li>
+								<label for="phone">Контактный телефон*:</label>
+								<input type="number" id="phone" name="phone" placeholder="Введите телефон">
+								<button>Звонок</button>
+							</li>
+							<li>
+								<label for="email">Электронная почта*:</label>
+								<input type="email" id="email" name="email" placeholder="Введите e-mail">
+								<button>Почта</button>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset class="form-item">
+						<legend class="form-tittle">
+							Ваше общее впечатление:
+						</legend>
+						<ul>
+							<li>
+								<label></label>
+								<input type="radio" name="" value="positive" checked="">
+								<span></span>
+								<span>Скорее положительное</span>
+							</li>
+							<li>
+								<label></label>
+								<input type="radio" name="" value="negative">
+								<span></span>
+								<span>Скорее отрицательное</span>
+							</li>
+							<li><label></label>
+								<input type="radio" name="" value="no">
+								<span></span>
+								<span>Затрудняюсь ответить</span>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset class="form-item">
+						<legend class="form-tittle">
+							Посещенные достопримечательности:
+						</legend>
+						<ul>
+							<li>
+								<label></label>
+								<input type="checkbox" name="" value="brige" checked="">
+								<span></span>
+								<span>Мост Дьявола</span>
+							</li>
+							<li>
+								<label></label>
+								<input type="checkbox" name="" value="mount" checked="">
+								<span></span>
+								<span>Гора-Колокол</span>
+							</li>
+							<li>
+								<label></label>
+								<input type="checkbox" name="" value="park" checked="">
+								<span></span>
+								<span>Слайд-Парк</span>
+							</li>
+							<li>
+								<label></label>
+								<input type="checkbox" name="" value="red">
+								<span></span>
+								<span>Красные скалы</span>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset class="form-item">
+						<legend class="form-tittle">
+							Опишите сови эмоции:
+						</legend>
+						<div>
+							<textarea placeholder="Опишите подробно все свои восторги"></textarea>
+						</div>
+					</fieldset>
+					<div><button class="btn-reg">Отправить отзыв</button></div>
+				</form>
+			</main>
+			<footer class="page-footer">
+		<div class="page-footer-social social">
+			<div class="visit">
+			<h2>#VISITSEDONA</h2>
+			</div>
+			<div class="social-main">
+			<ul class="social-list">
+				<li class="social-item"><a href="#" class="social_link"> <img src="img/icon-twitter.svg.png" alt="" class="social-link--twitter">Twitter</a></li>
+				<li class="social-item"><a href="#" class="social_link"> <img src="img/icon-facebook.svg.png" alt=""class="social-link--facebook">Facebook</a></li>
+				<li class="social-item"><a href="#" class="social_link social-link--youtube"><img src="img/icon-youtube.svg.png" alt=""class="social-link--youtube">Youtube</a></li>
+			</ul>
+			</div>
+			<div class="htm-academy ">
+				<p class="html-text">Разработано<span class="html-icon"><img src="img/htmlacademy.svg.png" alt=""></span></p>
+			</div>
+		</div>
+	</footer>
+			</body>
+</html>
