@@ -56,9 +56,9 @@
 			</div>
 			<main class="main-content">
 				<form action="#" class="form-list" method="post">
-					<fieldset class="form-item">
+					<fieldset class="form-item profile-list">
 						<legend class="form-tittle">
-							Представтесь
+							Представтесь:
 						</legend>
 						<ul class="form-profile">
 							<li class="form-profile--item">
@@ -73,87 +73,81 @@
 								<input type="text" id="patronymic" name="patronymic" placeholder="Александрович"></li>
 						</ul>
 					</fieldset>
-					<fieldset class="form-item">
+					<fieldset class="form-item contact-list">
 						<legend class="form-tittle">
 							Контактная информация
 						</legend>
-						<ul>
-							<li>
-								<label for="phone">Контактный телефон*:</label>
-								<input type="number" id="phone" name="phone" placeholder="Введите телефон">
-								<button>Звонок</button>
+						<ul class="form-profile contact-profile">
+							<li class="contact-file">
+								<label for="phone" class="form-label"><span class="phone-dec">Контактный</span> телефон*:</label>
+								<div class="input-contact">
+								<input type="tel" id="phone" name="phone" placeholder="Введите телефон" >
+								<button class="form-btn btn-icon--phone"><img src="img/form/phone.svg.png" alt="">Звонок</button>
 							</li>
-							<li>
-								<label for="email">Электронная почта*:</label>
+							</div>
+							<li class="contact-file">
+								<label for="email" class="form-label">Электронная почта*:</label>
+								<div class="input-contact">
 								<input type="email" id="email" name="email" placeholder="Введите e-mail">
-								<button>Почта</button>
+								<button class="form-btn btn-icon--email"><img src="img/form/mail.svg.png" alt="">Почта</button>
 							</li>
+						</div>
 						</ul>
 					</fieldset>
-					<fieldset class="form-item">
+					<fieldset class="form-item radio-list">
 						<legend class="form-tittle">
 							Ваше общее впечатление:
 						</legend>
-						<ul>
-							<li>
-								<label></label>
-								<input type="radio" name="" value="positive" checked="">
-								<span></span>
-								<span>Скорее положительное</span>
+						<ul class="form-profile mar-20">
+							<li class="label-icon">
+								<input type="radio" name="opinion" id="positive" value="positive" checked="" class="radio__input">
+                <label for="positive" class="radio__label">Скорее положительное</label>
 							</li>
-							<li>
-								<label></label>
-								<input type="radio" name="" value="negative">
-								<span></span>
-								<span>Скорее отрицательное</span>
+							<li class="label-icon">
+								
+								<input type="radio" name="opinion" id="negative" value="negative" class="radio__input">						
+							<label for="negative" class="radio__label">Скорее отрицательное</label>
 							</li>
-							<li><label></label>
-								<input type="radio" name="" value="no">
-								<span></span>
-								<span>Затрудняюсь ответить</span>
+							<li class="label-icon">
+								<input type="radio" id="neutrally" name="opinion" value="no" class="radio__input">
+							<label for="neutrally" class="radio__label">Затрудняюсь ответить</label>
 							</li>
 						</ul>
 					</fieldset>
-					<fieldset class="form-item">
+					<fieldset class="form-item checkbox-list">
 						<legend class="form-tittle">
 							Посещенные достопримечательности:
 						</legend>
-						<ul>
-							<li>
-								<label></label>
-								<input type="checkbox" name="" value="brige" checked="">
-								<span></span>
-								<span>Мост Дьявола</span>
+						<ul class="form-profile checkbox-landmark">
+							<li class="checkbox-icon">
+								<input type="checkbox" name="landmark" value="devil" checked="" id="devil" class="checkbox-input">
+								<label for="devil" class="checkbox-label">Мост Дьявола</label>
 							</li>
-							<li>
-								<label></label>
-								<input type="checkbox" name="" value="mount" checked="">
-								<span></span>
-								<span>Гора-Колокол</span>
+							<li class="checkbox-icon">
+								<input type="checkbox" name="landmark" value="mount" checked="" id="mount" class="checkbox-input">
+								<label for="mount" class="checkbox-label">Гора-Колокол</label>
 							</li>
-							<li>
-								<label></label>
-								<input type="checkbox" name="" value="park" checked="">
-								<span></span>
-								<span>Слайд-Парк</span>
+							<li class="checkbox-icon">
+								<input type="checkbox" name="landmark" value="park" checked="" id="park" class="checkbox-input">
+								<label for="park" class="checkbox-label">Слайд-Парк</label>
 							</li>
-							<li>
+							<li class="checkbox-icon">
 								<label></label>
-								<input type="checkbox" name="" value="red">
-								<span></span>
-								<span>Красные скалы</span>
+								<input type="checkbox" name="landmark" value="red" id="red" class="checkbox-input">
+								<label for="red" class="checkbox-label">Красные скалы</label>
 							</li>
 						</ul>
 					</fieldset>
-					<fieldset class="form-item">
+					<fieldset class="form-item comment">
 						<legend class="form-tittle">
 							Опишите сови эмоции:
 						</legend>
-						<div>
-							<textarea placeholder="Опишите подробно все свои восторги"></textarea>
+						<div class="row-comment">
+							<textarea placeholder="Опишите подробно все свои восторги" class="form-comment"></textarea>
 						</div>
 					</fieldset>
-					<div><button class="btn-reg">Отправить отзыв</button></div>
+					<div class="bron"><button class="btn-reg">Отправить отзыв</button>
+						<span class="alert">* - Обязательные поля</span></div>
 				</form>
 			</main>
 			<footer class="page-footer">
